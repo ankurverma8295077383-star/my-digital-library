@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Portfolio | GIS & Python</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #00f2fe;
+            --secondary: #4facfe;
+            --bg: #0b0e14;
+            --card-bg: rgba(255, 255, 255, 0.05);
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg);
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(0, 242, 254, 0.05) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(79, 172, 254, 0.05) 0%, transparent 20%);
+            color: white;
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container { max-width: 1200px; width: 100%; }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            background: linear-gradient(to right, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 2px;
+        }
+
+        header p { color: #888; margin-top: 10px; font-size: 1.1rem; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .card:hover {
+            transform: translateY(-10px) scale(1.02);
+            border-color: var(--primary);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #ccc;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 25px;
+        }
+
+        .tag {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 5px 12px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            color: var(--secondary);
+            border: 1px solid rgba(79, 172, 254, 0.3);
+        }
+
+        .btn {
+            text-align: center;
+            padding: 12px;
+            background: linear-gradient(45deg, var(--secondary), var(--primary));
+            color: #000;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: 600;
+            transition: opacity 0.3s;
+        }
+
+        .btn:hover { opacity: 0.9; }
+
+        /* Status Indicator */
+        .status {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #00ff88;
+            margin-bottom: 10px;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="profile-container">
+    <div class="profile-circle">
+        <img src="image_7b593f.png" alt="My Profile">
+    </div>
+</div>
+
+<style>
+    .profile-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .profile-circle {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        border: 4px solid #4facfe; /* Light Blue Border aapki pic jaisa */
+        padding: 5px; /* Border aur photo ke bich gap */
+        overflow: hidden;
+        background: white;
+        box-shadow: 0 0 20px rgba(79, 172, 254, 0.4);
+    }
+
+    .profile-circle img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+</style>
+
+    <div class="container">
+        <header>
+            <h1>ANKUR VERMA</h1>
+            <p>My Personal Digital Library</p>
+        </header>
+
+        <div class="grid">
+            
+            <div class="card">
+                <div>
+                    <span class="status">Completed</span>
+                    <h2>Akshardham 3D Mapping</h2>
+                    <p>Created a detailed 3D visualization using ArcGIS Map and ArcScene. Showcases spatial depth and structural modeling.</p>
+                    <div class="tech-stack">
+                        <span class="tag">ArcScene</span>
+                        <span class="tag">ArcGIS Map</span>
+                        <span class="tag">3D Modeling</span>
+                    </div>
+                </div>
+                <a href="LINK_YAHAN_DALO" target="_blank" class="btn">View Project</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <span class="status">Live Tool</span>
+                    <h2>Lat-Long Tool (ArcGIS Pro)</h2>
+                    <p>Custom Python-based tool developed to solve ground truth verification problems in professional workflows.</p>
+                    <div class="tech-stack">
+                        <span class="tag">Python</span>
+                        <span class="tag">ArcPy</span>
+                        <span class="tag">ArcGIS Pro</span>
+                    </div>
+                </div>
+                <a href="LINK_YAHAN_DALO" target="_blank" class="btn">Get Source Code</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <span class="status">MAPS</span>
+                    <h2>MAPS</h2>
+                    <p>Spatio-Temporal study of Haryana (2000-2025) using Remote Sensing and Python to track climate shifts.</p>
+                    <div class="tech-stack">
+                        <span class="tag">Remote Sensing</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Data Analysis</span>
+                    </div>
+                </div>
+                <a href="https://drive.google.com/drive/folders/1yuJ3w7iHneO2v5OB07trVSIg-52T_XlX?usp=sharing" target="_blank" class="btn">Read Case Study</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <span class="status">Updated</span>
+                    <h2>Official Documents</h2>
+                    <p>Access my Resume, Degrees, and Certificates for HR verification.</p>
+                    <div class="tech-stack">
+                        <span class="tag">PDF</span>
+                        <span class="tag">Resume</span>
+                        <span class="tag">Certificates</span>
+                    </div>
+                </div>
+                <a href="LINK_YAHAN_DALO" target="_blank" class="btn">Open Vault</a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
