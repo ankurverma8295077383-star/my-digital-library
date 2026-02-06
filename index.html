@@ -379,8 +379,7 @@ function unlockSection6() {
 }
 </script>
 
-            
-         <div class="card">
+  <div class="card">
     <div>
         <span class="status">SECTION 7</span>
         <h2>MY AI VIDEOS</h2>
@@ -391,29 +390,31 @@ function unlockSection6() {
             <span class="tag">OTHER</span>
         </div>
     </div>
-    <a href="javascript:void(0)" onclick="checkPassword()" class="btn">View Videos</a>
+    <a href="javascript:void(0)" onclick="unlockSection7()" class="btn">Open Vault</a>
 </div>
 
 <script>
-function checkPassword() {
+function unlockSection7() {
     
-    const correctPassword = "A7"; 
+    const pass = "A7"; 
     
+    
+    const videoLink = "https://drive.google.com/drive/folders/1jwnGvXKlPvIfuc1cOxkhLMM49h1dkJrt?usp=sharing";
 
-    const userPassword = prompt("Please enter the password to view videos:");
+    
+    const userInput = prompt("Protected Gallery! Please enter the Access Code to view AI Videos:");
 
-    if (userPassword === correctPassword) {
-       
-        window.open("https://drive.google.com/drive/folders/1jwnGvXKlPvIfuc1cOxkhLMM49h1dkJrt?usp=sharing", "_blank");
-    } else if (userPassword === null) {
-        
-        return;
+    if (userInput === null) return; 
+
+    if (userInput === pass) {
+        window.open(videoLink, "_blank");
     } else {
-   
-        alert("Incorrect password! Access denied.");
+        alert("Incorrect Password! Access Denied.");
     }
 }
 </script>
+
+
 
 <div class="card">
     <div>
@@ -425,20 +426,26 @@ function checkPassword() {
             <span class="tag">OTHER</span>
         </div>
     </div>
-    <a href="javascript:void(0)" onclick="accessLinkedIn()" class="btn">View Profile</a>
+    <a href="javascript:void(0)" onclick="unlockSection8()" class="btn">Open Vault</a>
 </div>
 
 <script>
-function accessLinkedIn() {
+function unlockSection8() {
     
-    const secureCode = "A8"; 
+    const pass = "A8"; 
     
-    const input = prompt("Enter Access Code to view LinkedIn Profile:");
+    
+    const linkedinLink = "https://www.linkedin.com/in/ankur-verma-748449376?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app";
 
-    if (input === secureCode) {
-        window.open("https://www.linkedin.com/in/ankur-verma-748449376?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", "_blank");
-    } else if (input !== null) {
-        alert("Invalid Access Code!");
+  
+    const userInput = prompt("Verification Required! Please enter the password to view my LinkedIn Profile:");
+
+    if (userInput === null) return; 
+
+    if (userInput === pass) {
+        window.open(linkedinLink, "_blank");
+    } else {
+        alert("Incorrect Password! Access Denied.");
     }
 }
 </script>
@@ -528,6 +535,7 @@ function accessLinkedIn() {
 </body>
 
 </html>
+
 
 
 
