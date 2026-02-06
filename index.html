@@ -190,61 +190,144 @@ header h1 {
 
         <div class="grid">
             
-            <div class="card">
-                <div>
-                    <span class="status">SECTION 1</span>
-                    <h2>MY TOOLS</h2>
-                    
-                    <div class="tech-stack">
-                        <span class="tag">ArcGIS Map</span>
-                        <span class="tag">ArcGIS pro</span>
-                        
-                    </div>
-                </div>
-                <a href="LINK_YAHAN_DALO" target="_blank" class="btn">View Tools</a>
-            </div>
+ <div class="card">
+    <div>
+        <span class="status">SECTION 1</span>
+        <h2>MY TOOLS</h2>
+        
+        <div class="tech-stack">
+            <span class="tag">ArcGIS Map</span>
+            <span class="tag">ArcGIS pro</span>
+        </div>
+    </div>
+    <a href="javascript:void(0)" onclick="unlockSection1()" class="btn">View Tools</a>
+</div>
 
-            <div class="card">
-                <div>
-                    <span class="status">SECTION 2</span>
-                    <h2>MY CODES</h2>
-                   
-                    <div class="tech-stack">
-                        <span class="tag">PYTHON</span>
-                        <span class="tag">GIS</span>
-                        <span class="tag">OTHER</span>
-                    </div>
-                </div>
-                <a href="https://drive.google.com/drive/folders/1fZSQixGBUjopNTgPH-ibjmzl_tpkkou_?usp=sharing" target="_blank" class="btn">View Code</a>
-            </div>
+<script>
+function unlockSection1() {
+    
+    const pass = "A1"; 
+    
+ 
+    const toolsLink = "https://drive.google.com/drive/folders/1RHEidR8sq32PcH_W4-NkAnpq-bViPYJ5?usp=sharing";
 
-            <div class="card">
-                <div>
-                    <span class="status">SECTION 3</span>
-                    <h2>MY MAPS</h2>
-                    
-                    <div class="tech-stack">
-                        <span class="tag">REMOTE SENSING</span>
-                        <span class="tag">GIS</span>
-                        <span class="tag">LIDAR</span>
-                    </div>
-                </div>
-                <a href="https://drive.google.com/drive/folders/1yuJ3w7iHneO2v5OB07trVSIg-52T_XlX?usp=sharing" class="btn">View Maps</a>
-            </div>
+   
+    const userInput = prompt("Access Key Required! Please enter the password to view My Tools:");
 
-            <div class="card">
-                <div>
-                    <span class="status">SECTION 4</span>
-                    <h2>MY OFFICIAL DOCUMENTS</h2>
-                    
-                    <div class="tech-stack">
-                        <span class="tag">PDF</span>
-                        <span class="tag">RESUME</span>
-                        <span class="tag">CERTIFICATES</span>
-                    </div>
-                </div>
-                <a href="LINK_YAHAN_DALO" target="_blank" class="btn">View Vault</a>
-            </div>
+    if (userInput === null) return; // Agar user 'Cancel' click kare
+
+    if (userInput === pass) {
+        window.open(toolsLink, "_blank");
+    } else {
+        alert("Incorrect Password! Access Denied.");
+    }
+}
+</script>
+
+          <div class="card">
+    <div>
+        <span class="status">SECTION 2</span>
+        <h2>MY CODES</h2>
+        
+        <div class="tech-stack">
+            <span class="tag">PYTHON</span>
+            <span class="tag">GIS</span>
+            <span class="tag">OTHER</span>
+        </div>
+    </div>
+    <a href="javascript:void(0)" onclick="unlockSection2()" class="btn">View Code</a>
+</div>
+
+<script>
+function unlockSection2() {
+
+    const pass = "A2"; 
+    
+    
+    const driveLink = "https://drive.google.com/drive/folders/1fZSQixGBUjopNTgPH-ibjmzl_tpkkou_?usp=sharing";
+
+
+    const userInput = prompt("This section is private. Please enter the Access Code:");
+
+    if (userInput === null) return; // User ne cancel kiya
+
+    if (userInput === pass) {
+        window.open(driveLink, "_blank");
+    } else {
+        alert("Incorrect Password! Access Denied.");
+    }
+}
+</script>
+
+<div class="card">
+    <div>
+        <span class="status">SECTION 3</span>
+        <h2>MY MAPS</h2>
+        
+        <div class="tech-stack">
+            <span class="tag">REMOTE SENSING</span>
+            <span class="tag">GIS</span>
+            <span class="tag">LIDAR</span>
+        </div>
+    </div>
+    <a href="javascript:void(0)" onclick="unlockSection3()" class="btn">View Maps</a>
+</div>
+
+<script>
+function unlockSection3() {
+    
+    const pass = "A3"; 
+    
+  
+    const driveLink = "https://drive.google.com/drive/folders/1yuJ3w7iHneO2v5OB07trVSIg-52T_XlX?usp=sharing";
+
+   
+    const userInput = prompt("This Map Gallery is password protected. Enter Code:");
+
+    if (userInput === null) return; // Agar user cancel kare
+
+    if (userInput === pass) {
+        window.open(driveLink, "_blank");
+    } else {
+        alert("Incorrect Password! Access Denied.");
+    }
+}
+</script>
+
+       <div class="card">
+    <div>
+        <span class="status">SECTION 4</span>
+        <h2>MY OFFICIAL DOCUMENTS</h2>
+        
+        <div class="tech-stack">
+            <span class="tag">PDF</span>
+            <span class="tag">RESUME</span>
+            <span class="tag">CERTIFICATES</span>
+        </div>
+    </div>
+    <a href="javascript:void(0)" onclick="unlockSection4()" class="btn">View Vault</a>
+</div>
+
+<script>
+function unlockSection4() {
+   
+    const pass = "A4"; 
+    
+   
+    const driveLink = "https://drive.google.com/drive/folders/1BC7U-Mh-nkUbEFziTxeNaaSiJPaduxds?usp=sharing";
+
+    
+    const userInput = prompt("Access Restricted! Please enter the password to view official documents:");
+
+    if (userInput === null) return; // User ne cancel kiya toh kuch nahi hoga
+
+    if (userInput === pass) {
+        window.open(driveLink, "_blank");
+    } else {
+        alert("Incorrect Password! Access Denied. Please contact Ankur for the key.");
+    }
+}
+</script>
 
             
             <div class="card">
@@ -261,48 +344,104 @@ header h1 {
                 <a href="https://ankurverma8295077383-star.github.io/_GIS_SOURCE_SITE_ANKUR_VERMA/" target="_blank" class="btn">View Website</a>
             </div>
 
-            <div class="card">
-                <div>
-                    <span class="status">SECTION 6</span>
-                    <h2>MY PROJECTS AND REPORTS</h2>
-                   
-                    <div class="tech-stack">
-                        <span class="tag">PROJECTS</span>
-                        <span class="tag">REPORTS</span>
-                        <span class="tag">OTHER</span>
-                    </div>
-                </div>
-                <a href="LINK_YAHAN_DALO" target="_blank" class="btn">View Reports</a>
-            </div>
+          <div class="card">
+    <div>
+        <span class="status">SECTION 6</span>
+        <h2>MY PROJECTS AND REPORTS</h2>
+        
+        <div class="tech-stack">
+            <span class="tag">PROJECTS</span>
+            <span class="tag">REPORTS</span>
+            <span class="tag">OTHER</span>
+        </div>
+    </div>
+    <a href="javascript:void(0)" onclick="unlockSection6()" class="btn">View Reports</a>
+</div>
+
+<script>
+function unlockSection6() {
+    
+    const pass = "A6"; 
+    
+    
+    const reportLink = "https://drive.google.com/drive/folders/1_T9GmQz6TnIU0NY40qfC64fFsYvdHn94?usp=sharing";
+
+   
+    const userInput = prompt("This section contains confidential reports. Please enter the Access Code:");
+
+    if (userInput === null) return; // Agar user cancel kare toh wapis chala jaye
+
+    if (userInput === pass) {
+        window.open(reportLink, "_blank");
+    } else {
+        alert("Incorrect Password! Access Denied. Please contact Ankur for the key.");
+    }
+}
+</script>
 
             
-            <div class="card">
-                <div>
-                    <span class="status">SECTION 7</span>
-                    <h2>MY AI VIDEOS</h2>
-                    
-                    <div class="tech-stack">
-                        <span class="tag">AI</span>
-                        <span class="tag">VIDEOS</span>
-                        <span class="tag">OTHER</span>
-                    </div>
-                </div>
-                <a href="https://drive.google.com/drive/folders/1jwnGvXKlPvIfuc1cOxkhLMM49h1dkJrt?usp=sharing" target="_blank" class="btn">View Videos</a>
-            </div>
+         <div class="card">
+    <div>
+        <span class="status">SECTION 7</span>
+        <h2>MY AI VIDEOS</h2>
+        
+        <div class="tech-stack">
+            <span class="tag">AI</span>
+            <span class="tag">VIDEOS</span>
+            <span class="tag">OTHER</span>
+        </div>
+    </div>
+    <a href="javascript:void(0)" onclick="checkPassword()" class="btn">View Videos</a>
+</div>
+
+<script>
+function checkPassword() {
+    
+    const correctPassword = "A7"; 
+    
+
+    const userPassword = prompt("Please enter the password to view videos:");
+
+    if (userPassword === correctPassword) {
+       
+        window.open("https://drive.google.com/drive/folders/1jwnGvXKlPvIfuc1cOxkhLMM49h1dkJrt?usp=sharing", "_blank");
+    } else if (userPassword === null) {
+        
+        return;
+    } else {
+   
+        alert("Incorrect password! Access denied.");
+    }
+}
+</script>
 
 <div class="card">
-                <div>
-                    <span class="status">SECTION 8</span>
-                    <h2>MY LINKEDIN PROFILE</h2>
-                   
-                    <div class="tech-stack">
-                        
-                        <span class="tag">LINKEDIN</span>
-                        <span class="tag">OTHER</span>
-                    </div>
-                </div>
-                <a href="https://www.linkedin.com/in/ankur-verma-748449376?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="btn">View Profile</a>
-            </div>
+    <div>
+        <span class="status">SECTION 8</span>
+        <h2>MY LINKEDIN PROFILE</h2>
+        
+        <div class="tech-stack">
+            <span class="tag">LINKEDIN</span>
+            <span class="tag">OTHER</span>
+        </div>
+    </div>
+    <a href="javascript:void(0)" onclick="accessLinkedIn()" class="btn">View Profile</a>
+</div>
+
+<script>
+function accessLinkedIn() {
+    
+    const secureCode = "A8"; 
+    
+    const input = prompt("Enter Access Code to view LinkedIn Profile:");
+
+    if (input === secureCode) {
+        window.open("https://www.linkedin.com/in/ankur-verma-748449376?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", "_blank");
+    } else if (input !== null) {
+        alert("Invalid Access Code!");
+    }
+}
+</script>
 
 
         </div>
