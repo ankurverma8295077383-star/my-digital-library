@@ -12,22 +12,49 @@
             --bg: #0b0e14;
             --card-bg: rgba(255, 255, 255, 0.05);
         }
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #050505;
+    /* Smoky Neon Glow Effect from your image */
+    background-image: 
+        radial-gradient(circle at 50% 100%, rgba(0, 215, 255, 0.2) 0%, transparent 50%),
+        radial-gradient(circle at 10% 20%, rgba(0, 81, 162, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(0, 215, 255, 0.1) 0%, transparent 40%);
+    
+    background-attachment: fixed;
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
 
-        body {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            background-color: var(--bg);
-            background-image: 
-                radial-gradient(circle at 10% 20%, rgba(0, 242, 254, 0.05) 0%, transparent 20%),
-                radial-gradient(circle at 90% 80%, rgba(79, 172, 254, 0.05) 0%, transparent 20%);
-            color: white;
-            padding: 50px 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+header h1 {
+    font-size: 3.5rem;
+    /* Electric Cyan Colour */
+    color: #00D7FF; 
+    text-shadow: 0 0 10px rgba(0, 215, 255, 0.8), 
+                 0 0 30px rgba(0, 215, 255, 0.4);
+    margin-bottom: 5px;
+}
 
-        .container { max-width: 1200px; width: 100%; }
+/* Card border glow according to image */
+.card:hover {
+    border-color: #00D7FF;
+    box-shadow: 0 0 20px rgba(0, 215, 255, 0.3);
+}
+
+/* Isse aapka header aur chamkega */
+header h1 {
+    font-size: 3.5rem;
+    color: #00f2fe;
+    text-shadow: 0 0 10px rgba(0, 242, 254, 0.8), 
+                 0 0 20px rgba(0, 242, 254, 0.5), 
+                 0 0 30px rgba(0, 242, 254, 0.3);
+    margin-bottom: 5px;
+}        .container { max-width: 1200px; width: 100%; }
 
         header {
             text-align: center;
@@ -167,7 +194,7 @@
                 <div>
                     <span class="status">SECTION 1</span>
                     <h2>MY TOOLS</h2>
-                    <p>"I created these tools after hitting constant roadblocks during my own practical work. Having experienced those frustrations firsthand, I wanted to build a smoother path for others in the community. These are real solutions for real problems, crafted so you can focus on results rather than troubleshooting."</p>
+                    
                     <div class="tech-stack">
                         <span class="tag">ArcGIS Map</span>
                         <span class="tag">ArcGIS pro</span>
@@ -181,7 +208,7 @@
                 <div>
                     <span class="status">SECTION 2</span>
                     <h2>MY CODES</h2>
-                    <p>"I have developed and curated an extensive library of custom ArcGIS Python scripts designed for long-term utility and future-proofing. By documenting these solutions now, I ensure that complex spatial challenges can be resolved instantly with optimized, ready-to-use code. This collection serves as a strategic technical asset for streamlining upcoming GIS projects."</p>
+                   
                     <div class="tech-stack">
                         <span class="tag">PYTHON</span>
                         <span class="tag">GIS</span>
@@ -195,7 +222,7 @@
                 <div>
                     <span class="status">SECTION 3</span>
                     <h2>MY MAPS</h2>
-                    <p>"I have developed a diverse portfolio of analytical maps, each subjected to rigorous accuracy assessments and comprehensive ground verification. By validating digital spatial data against real-world field conditions, I ensure that every map provides a precise and reliable representation for informed decision-making."</p>
+                    
                     <div class="tech-stack">
                         <span class="tag">REMOTE SENSING</span>
                         <span class="tag">GIS</span>
@@ -209,7 +236,7 @@
                 <div>
                     <span class="status">SECTION 4</span>
                     <h2>MY OFFICIAL DOCUMENTS</h2>
-                    <p>Access my Resume, Degrees, and Certificates for HR verification.</p>
+                    
                     <div class="tech-stack">
                         <span class="tag">PDF</span>
                         <span class="tag">RESUME</span>
@@ -223,22 +250,22 @@
             <div class="card">
                 <div>
                     <span class="status">SECTION 5</span>
-                    <h2>MY WEBSITE AND LINKEDIN PROFILE</h2>
-                    <p>My LinkedIn profile showcases my professional journey, including my latest research, field-verified projects, and my contributions to ArcGIS automation. Let's connect and discuss how Python and spatial analysis are shaping the future of geography. And I have created a GIS website.</p>
+                    <h2>MY WEBSITE</h2>
+                    
                     <div class="tech-stack">
                         <span class="tag">WEBSITE</span>
-                        <span class="tag">LINKEDIN</span>
+                        
                         <span class="tag">OTHER</span>
                     </div>
                 </div>
-                <a href="https://ankurverma8295077383-star.github.io/_GIS_SOURCE_SITE_ANKUR_VERMA/",href="www.linkedin.com/in/ankur-verma-748449376" target="_blank" class="btn">View Profile</a>
+                <a href="https://ankurverma8295077383-star.github.io/_GIS_SOURCE_SITE_ANKUR_VERMA/" target="_blank" class="btn">View Website</a>
             </div>
 
             <div class="card">
                 <div>
                     <span class="status">SECTION 6</span>
                     <h2>MY PROJECTS AND REPORTS</h2>
-                    <p>"Every project in this gallery is accompanied by a detailed technical report, meticulously documented in professional formats. These files cover the entire project lifecycle—from initial Python script development and geoprocessing workflows to final ground-truth verification. explore the underlying logic, methodology, and accuracy assessments that define my GIS contributions."</p>
+                   
                     <div class="tech-stack">
                         <span class="tag">PROJECTS</span>
                         <span class="tag">REPORTS</span>
@@ -253,7 +280,7 @@
                 <div>
                     <span class="status">SECTION 7</span>
                     <h2>MY AI VIDEOS</h2>
-                    <p>"Harnessing Generative AI to transform technical concepts into high-impact visual stories and dynamic motion content."</p>
+                    
                     <div class="tech-stack">
                         <span class="tag">AI</span>
                         <span class="tag">VIDEOS</span>
@@ -263,11 +290,105 @@
                 <a href="https://drive.google.com/drive/folders/1jwnGvXKlPvIfuc1cOxkhLMM49h1dkJrt?usp=sharing" target="_blank" class="btn">View Videos</a>
             </div>
 
+<div class="card">
+                <div>
+                    <span class="status">SECTION 8</span>
+                    <h2>MY LINKEDIN PROFILE</h2>
+                   
+                    <div class="tech-stack">
+                        
+                        <span class="tag">LINKEDIN</span>
+                        <span class="tag">OTHER</span>
+                    </div>
+                </div>
+                <a href="https://www.linkedin.com/in/ankur-verma-748449376?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="btn">View Profile</a>
+            </div>
+
+
         </div>
     </div>
+<section class="final-note">
+    <div class="thank-you-box">
+        <h2>Thank You for Visiting!</h2>
+        <p class="hr-message">
+            "I believe that great work happens at the intersection of <strong>Logic (Python)</strong> and <strong>Vision (GIS)</strong>. 
+            I am eager to bring my analytical skills and geospatial expertise to your esteemed organization and contribute to your upcoming innovative projects."
+        </p>
+        
+        <div class="contact-footer">
+            <p>Let's build something impactful together.</p>
+            <a href="https://www.linkedin.com/in/ankur-verma-748449376?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="btn-final">Connect on LinkedIn</a>
+            <a href="mailto:ankur2515verma.d@gmail.com" class="btn-final secondary">Send an Email</a>
+        </div>
+        
+        <p class="copyright">© 2026 | Digital Library Portfolio</p>
+    </div>
+</section>
 
+<style>
+    .final-note {
+        margin-top: 80px;
+        width: 100%;
+        max-width: 800px;
+        text-align: center;
+        padding-bottom: 50px;
+    }
+
+    .thank-you-box {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px dashed rgba(0, 215, 255, 0.3);
+        border-radius: 20px;
+        padding: 40px;
+        backdrop-filter: blur(10px);
+    }
+
+    .thank-you-box h2 {
+        color: #00D7FF;
+        font-size: 2rem;
+        margin-bottom: 20px;
+        text-shadow: 0 0 10px rgba(0, 215, 255, 0.5);
+    }
+
+    .hr-message {
+        font-style: italic;
+        color: #ccc;
+        line-height: 1.8;
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+
+    .btn-final {
+        display: inline-block;
+        padding: 12px 25px;
+        margin: 10px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: 0.3s;
+        background: #00D7FF;
+        color: #000;
+    }
+
+    .btn-final.secondary {
+        background: transparent;
+        border: 1px solid #00D7FF;
+        color: #00D7FF;
+    }
+
+    .btn-final:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 15px rgba(0, 215, 255, 0.4);
+    }
+
+    .copyright {
+        margin-top: 40px;
+        font-size: 0.8rem;
+        color: #555;
+    }
+</style>
 </body>
 
 </html>
+
 
 
