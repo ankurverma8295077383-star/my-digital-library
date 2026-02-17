@@ -12,23 +12,29 @@
             --bg: #0b0e14;
             --card-bg: rgba(255, 255, 255, 0.05);
         }
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #050505;
- 
-    background-image: 
-        radial-gradient(circle at 50% 100%, rgba(0, 215, 255, 0.2) 0%, transparent 50%),
-        radial-gradient(circle at 10% 20%, rgba(0, 81, 162, 0.15) 0%, transparent 40%),
-        radial-gradient(circle at 90% 80%, rgba(0, 215, 255, 0.1) 0%, transparent 40%);
-    
-    background-attachment: fixed;
+    background-color: #000; 
     color: white;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 50px 20px;
+    overflow-x: hidden;
+}
+
+.bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+    opacity: 0.5; 
 }
 
 header h1 {
@@ -149,7 +155,11 @@ header h1 {
         }
     </style>
 </head>
-<body>
+    <body>
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="ANKUR.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
 <div class="profile-container">
     <div class="profile-circle">
         <img src="image_7b593f.png" alt="My Profile">
@@ -167,8 +177,8 @@ header h1 {
         width: 180px;
         height: 180px;
         border-radius: 50%;
-        border: 4px solid #4facfe; /* Light Blue Border aapki pic jaisa */
-        padding: 5px; /* Border aur photo ke bich gap */
+        border: 4px solid #4facfe; 
+        padding: 5px; 
         overflow: hidden;
         background: white;
         box-shadow: 0 0 20px rgba(79, 172, 254, 0.4);
@@ -536,6 +546,7 @@ function unlockSection8() {
 </body>
 
 </html>
+
 
 
 
